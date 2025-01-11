@@ -1,0 +1,27 @@
+ # Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore local environment files
+.env
+
+# Ignore virtual environments
+venv/
+.env/
+
+# Ignore unnecessary system files
+.DS_Store
+Thumbs.db
+
+# Ignore git and version control files
+.git
+.gitignore
+
+# Ignore Docker build files
+Dockerfile
+
+# Ignore log files
+*.log
+run.sh
+run.example.sh
