@@ -11,11 +11,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 CLOUDFLARE_API_TOKEN = os.getenv("CLOUDFLARE_API_TOKEN")
 ZONE_ID = os.getenv("ZONE_ID")
 RECORD_ID = os.getenv("RECORD_ID")
-
-# DNS Record Details
-DNS_RECORD_NAME = "wire.joeriabbo.nl"
-DNS_RECORD_TYPE = "A"
-TTL = 300  # Time to live in seconds
+DNS_RECORD_NAME = os.getenv("DNS_RECORD_NAME")
+DNS_RECORD_TYPE = os.getenv("DNS_RECORD_TYPE", "A")
+TTL = os.getenv("TTL", "300")
 
 # Function to get the current public IP
 def get_public_ip():
